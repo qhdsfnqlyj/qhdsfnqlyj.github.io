@@ -198,6 +198,12 @@ body{
 	display: block;
 	color: red;
 }
+.sm{
+	text-align: center;
+	font-size: 15px;
+	display: block;
+	color: bule;
+}
 @media only screen and (max-width: 640px) and (min-width: 200px){
 	.bt{
 		font-size: 26px;
