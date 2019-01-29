@@ -278,12 +278,19 @@ body{
 }
 .video{
 				width: 90%;			
-				height: 10%;
+				height: 30%;
 				text-align: center;
 				margin: 0 auto;
 				padding:1%;
-				
+				display: block;
 			}
+	.wei{
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 1em;
+		
+	}		
 .span_1_of_top  h4{
 	color:#333;
 	font-size:1.1em;
@@ -504,6 +511,7 @@ hr.hr2 {
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
 }
+
 .one_half, .one_third, .two_thirds, .one_fourth, .three_fourths, .one_fifth, .two_fifth, .three_fifths, .four_fifths {
 	position: relative;
 	margin: 0;
