@@ -276,6 +276,16 @@ body{
 	margin-top: 0px;
 	letter-spacing: -1px;
 }
+.video{
+				
+				
+				
+				height: 500px;
+				line-height: 500px;
+				text-align: center;
+				padding:1%;
+				
+			}
 .span_1_of_top  h4{
 	color:#333;
 	font-size:1.1em;
