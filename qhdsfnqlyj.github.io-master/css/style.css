@@ -277,8 +277,8 @@ body{
 	letter-spacing: -1px;
 }
 .video{
-				width: 90%;			
-				height: 30%;
+				width: 80%;			
+				height: 25%;
 				text-align: center;
 				margin: 0 auto;
 				padding:1%;
@@ -456,6 +456,11 @@ p.desc{
 	text-align: center;
 	overflow: hidden;
 }
+.middle-content .zb{
+	font-size:2em;
+	color: blue;
+}
+
 h1 {
 	color: red;
 	margin: 0 0 17px 0;
@@ -463,6 +468,10 @@ h1 {
 	text-transform: uppercase;
 	font-size:1.4em;
 }
+.wei{
+	color: red;
+}
+
 hr.hr1 {
 	margin: 0;
 	border-bottom: none;
