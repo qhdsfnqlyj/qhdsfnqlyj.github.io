@@ -1,0 +1,99 @@
+;fxhf1a64.inf
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%Fuji Xerox%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=07/23/2015,1.0.0.6
+CatalogFile=fxhf1a.cat
+
+[Manufacturer]
+%Fuji Xerox%=FUJIXEROX_PRINTERS,ntamd64
+
+[FUJIXEROX_PRINTERS]
+"FX DocuPrint P158 b" = INST_DRVR_2K,USBPRINT\FUJI_XEROXDocuPrint_ef68
+
+[FUJIXEROX_PRINTERS.ntamd64]
+"FX DocuPrint P158 b" = INST_DRVR_2K,USBPRINT\FUJI_XEROXDocuPrint_ef68
+[INST_DRVR_2K.NT]
+CopyFiles=DRIVER_FILES,GDI_DRIVER_FILES,OTHER_FILES,PRTPROCS_FILES
+DataSection=GDI_DATA_2K
+ConfigFile=fxhf1axpUI.DLL
+HelpFile=fxhf1ahhe.chm
+DataFile=fxhf1axpUI.DLL
+LanguageMonitor=%FX_MONITOR%
+PrintProcessor="fxhf1apps,fxhf1apps.dll"
+NoTestPage=1
+
+[INST_DRVR_2K.ntamd64]
+CopyFiles=DRIVER_FILES,GDI_DRIVER_FILES,OTHER_FILES,PRTPROCS_FILES
+DataSection=GDI_DATA_2K
+ConfigFile=fxhf1axpUI.DLL
+HelpFile=fxhf1ahhe.chm
+DataFile=fxhf1axpUI.DLL
+LanguageMonitor=%FX_MONITOR%
+PrintProcessor="fxhf1apps,fxhf1apps.dll"
+NoTestPage=1
+
+[GDI_DATA_2K]
+DriverFile=fxhf1aXP.DLL
+
+[PRTPROCS_FILES]
+fxhf1apps.dll
+fxhf1aRender.exe
+
+[DRIVER_FILES]
+;The following files are placed in \Winnt\System32\Spool\Drivers\w32x86
+fxhf1ahhe.CHM 
+
+[GDI_DRIVER_FILES]
+fxhf1axpUI.DLL
+fxhf1aRC.DLL
+fxhf1axp.DLL
+fxhf1axlRP.DLL
+fxhf1aFM.DLL
+fxhf1aCL.DLL
+fxhf1aIPS.DLL
+fxhf1aduplex.exe
+fxhf1ajbf.dll
+fxhf1anet.dll
+
+[OTHER_FILES]
+fxhf1alm.dll
+fxhf1ausb.dll
+
+[DestinationDirs]
+DefaultDestDir=66000
+OTHER_FILES=66002
+PRTPROCS_FILES=66001
+
+[SourceDisksNames.x86]
+1 = %instdisk%,,,""
+
+[SourceDisksNames.amd64]
+;1 = %instdisk%,,,""
+1 = "PDL_COMMON",fxhf1a.CAB,,
+
+[SourceDisksFiles]
+fxhf1axp.DLL	= 1
+fxhf1axpUI.DLL	= 1
+fxhf1aRC.DLL	= 1
+fxhf1axlRP.DLL	= 1
+fxhf1aFM.DLL	= 1
+fxhf1aCL.DLL	= 1
+fxhf1aIPS.DLL	= 1
+fxhf1aLM.DLL	= 1
+fxhf1ahhe.chm       = 1
+fxhf1aduplex.exe = 1
+fxhf1ajbf.dll		= 1
+fxhf1apps.dll		= 1
+fxhf1aRender.exe		= 1
+fxhf1anet.dll		= 1
+fxhf1ausb.dll		= 1
+
+[Strings]
+instdisk="Install Disk"
+Fuji Xerox="Fuji Xerox"
+FX_MONITOR="FUJI XEROX DocuPrint P158 b Language Monitor,fxhf1aLM.DLL"
